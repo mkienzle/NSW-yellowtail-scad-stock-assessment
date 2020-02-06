@@ -6,7 +6,7 @@ This repository provides data, methods, scripts and results used to estimate the
 
 ## Data
 
-The data consist of measurements of [age from a sample of commercial catches](Data/NSW_yellowtail_scad_catch_Age_data.csv), [weights from individual fish in specific intervals of age](Data/Mean_weight_at_age.csv), [total catch and purse seine catch and effort](Data/NSW_yellowtail_scad_catch_and_effort.csv).
+The data consist of measurements of [age from a sample of commercial catches](Data/NSW_yellowtail_scad_Age_data.csv), [weights from individual fish in specific intervals of age](Data/Mean_weight_at_age.csv), [total catch and purse seine catch and effort](Data/NSW_yellowtail_scad_catch_and_effort.csv).
 
 
 
