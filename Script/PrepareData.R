@@ -1,9 +1,9 @@
 # CREATED   4 Mar 2017
-# MODIFIED  6 Feb 2020
+# MODIFIED 29 Feb 2020
 
 
 ### Sample of age data
-age.data <- read.csv("../Data/NSW yellowtail scad Age data.csv", row.names = 1)
+age.data <- read.csv("../Data/NSW_yellowtail_scad_Age_data.csv", row.names = 1)
 age.data <- age.data[, -seq(20,25)]
 
 # What if we replace NAs
@@ -17,13 +17,13 @@ age.data <- age.data[, -seq(20,25)]
 #age.data.17Plus[,19] <- rowSums(age.data[,19:25], na.rm = TRUE)
 
 ### Load purse seine catch and effort
-ce <- read.csv("../Data/NSW yellowtail scad catch and effort.csv", row.names = 1)[, c("purseseine","PSdays")]
+ce <- read.csv("../Data/NSW_yellowtail_scad_catch_and_effort.csv", row.names = 1)[, c("purseseine","PSdays")]
 
 catch <- ce[1:nrow(age.data),1] * 1e3
 effort.mat <- outer(ce[1:nrow(age.data),2], rep(1,ncol(age.data)))
 
 ### Mean weight at age
-mwa <- read.csv("../Data/Mean weight at age.csv")
+mwa <- read.csv("../Data/Mean_weight_at_age.csv")
 mean.weight.at.age.mat <- outer(rep(1, nrow(age.data)), mwa[1:19,2])
 
 ### Estimate the number of fish in the catch

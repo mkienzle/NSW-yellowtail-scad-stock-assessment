@@ -6,7 +6,7 @@
 # Read the data
 #total.catch = read.csv("../Data/NSW yellowtail scad total catch data.csv")
 #PurseSeine.catch.effort = read.csv("../Data/NSW yellowtail scad Purse Seine catch and effort data.csv")
-catch.effort = read.csv("../Data/NSW yellowtail scad catch and effort.csv")
+catch.effort = read.csv("../Data/NSW_yellowtail_scad_catch_and_effort.csv")
 
 # Format the data into a data.frame
 my.df = with(catch.effort, data.frame(year = Year, 'Fishing method' = "Purse seine", catch = purseseine))
