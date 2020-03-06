@@ -26,15 +26,15 @@ Several models describing how mortality rates varied by age-group through time (
 
 So far, three mortality models have been estimated from the data. All models estimate a constant natural mortality (M), catchability (q) and proportions selected by the gear at age between 0 and 6 years old
 
-- Model 1 estimates 8 parameters (M, q and [6 selectivities for age-groups 0--1 to 5--6 years old](Script/Results/Models/Mod1-GearSelectivity.csv) to have remained constant throughout the entire time series. 
-- Model 2 estimated M, q and 2 parameters for a logistic gear selectivity (refer to article cited in the introduction for details). Estimates of selectivity at age are provided [here](Script/Results/Models/Mod2-GearSelectivity.csv).
-- Model 3 estimates selectivity in 1 block like model 1 and has natural mortality fixed at 0.7 per year according to estimates found in the scientific literature.
-
-<!--
+- Model 1 estimates 8 parameters (M, q and [6 selectivities for age-groups 0--1 to 5--6 years old](Script/Results/Models/Mod1-GearSelectivity.csv) to have remained constant throughout the entire time series. Gear selectivity was fixed to 1 for older age-groups.
+- Model 2 estimated M, q and 2 parameters for a logistic gear selectivity (refer to this [article](https://onlinelibrary.wiley.com/doi/abs/10.1111/fme.12286) for details). Estimates of selectivity at age are provided [here](Script/Results/Models/Mod2-GearSelectivity.csv).
+- Model 3 estimates 5 parameters assuming a double-logist gear selectivity.
 
 ## Results
 
-Model 2 is most supported by the data according to [AIC](Script/Results/Data/ModelComparisonTable.csv). [This diagnostic plot](Script/Results/Graphics/NbAtAgeOverlayedWithModel.png) shows discrepancies between model 2 and age data. [Profiles](Script/Results/Graphics/Model2-ProfileLikelihood.png) of its negative log-likelihood function are smooth around the minimum for each parameter and allow to visualise parameter estimates uncertainties. The sections below describe the dynamics of this fishery based on this model 2 parameter estimates.
+Model 1 is most supported by the data according to [AIC](Script/Results/Data/ModelComparisonTable.csv). [This diagnostic plot](Script/Results/Graphics/NbAtAgeOverlayedWithModel.png) shows discrepancies between model 2 and age data. [Profiles](Script/Results/Graphics/Model2-ProfileLikelihood.png) of its negative log-likelihood function are smooth around the minimum for each parameter and allow to visualise parameter estimates uncertainties. The sections below describe the dynamics of this fishery based on this model 2 parameter estimates.
+
+<!--
 
 ### Trends in populations quantities
 

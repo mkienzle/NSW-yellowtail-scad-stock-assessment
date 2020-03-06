@@ -1,15 +1,16 @@
 # CREATED  14 March 2017
-# MODIFIED  4 March 2020
+# MODIFIED  6 March 2020
 
 # PURPOSE calculate 95% Confidence intervals for parameters of model 1
 #         using the values from the profile likelihood
 
-#source("FitModels.R")
+source("FitModels.R")
 
 # Range of log-likelihood for model 1
 max.boundary <- result1$value + 0.5 * qchisq(0.95, df = length(result1$par) )
 
-pdf(file = "Results/Graphics/ProfileLikelihood.pdf")
+#pdf(file = "Results/Graphics/ProfileLikelihood.pdf")
+png(file = "Results/Graphics/Model1-ProfileLikelihood.png")
 par(mfrow = c(3,3))
 
 ### Natural mortality
