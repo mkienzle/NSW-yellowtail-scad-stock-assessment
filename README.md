@@ -10,23 +10,27 @@ The data consist of measurements of [age from a sample of commercial catches](Da
 
 
 
-Catches in this fishery have been relatively stable, in average 43 +- 18 tonnes. Catches in 2009/10 were reported to be 100 tonnes, an un-usually large figure in the time series of data. Fishing effort declined sharply since 2004/05, and have been stable since 2015/16 at around 150 boat-days. Catch per unit effort (CPUE), right-hand panel, were approx. 50 kg/boat-day at the beginning of the time series when effort was very large. After the sharp decline in effort, CPUE fluctuated around 200 kg/boat-day without showing any trend.
+Total catches in this fishery have been relatively stable, varying between 340 and 670 tonnes per year. The proportion caught using a purse seine varied between 56 and 86% of the total (excluding the unusual first year). The number of days the purse seine fleet fished between 1996/97 and 2017/18 has declined. In the last 8 years, purse seine catches varied in the directions as  effort. 
 
 ![alt text](https://github.com/mkienzle/NSW-yellowtail-scad-stock-assessment/blob/master/Script/Results/Graphics/CatchAndEffortVariations.png)
 
-<!--
+
 
 ## Methods
 
 Several models describing how mortality rates varied by age-group through time (depending on fishing effort, catchability and age-specific gear selectivity) were developed. All models assume a constant rate of mortality due to natural causes which was estimated. These mortality models have been expressed using hazard functions and converted into probabilities of dying at age from fishing using a method developed in the field of statistics called [survival analysis](https://link.springer.com/article/10.1007%2Fs13253-015-0237-y). These age-specific probabilities of dying from fishing were combined with age data sampled from commercial catches into a likelihood function. A range of hypotheses regarding gear selectivity and natural mortality expressed into the mortality models were compared with Akaike Information Criteria (AIC). 
 
-## Mortality models for sea garfish
 
-So far, three mortality models have been estimated from the data. All models assume constant natural mortality; full selection by the gear for age group 1-2 years old and older.
 
-- Model 1 estimates [selectivity of age-group 0-1 year old](Script/Results/Models/Mod1-GearSelectivity.csv) to have remained constant throughout the entire time series. 
-- Model 2 estimates [selectivity](Script/Results/Models/Mod2-GearSelectivity.csv) of age-group 0-1 year old to have change in 2010/11 as a result of a management decision to increase the minimum legal mesh size. 
+## Mortality models for yellowtail scad
+
+So far, three mortality models have been estimated from the data. All models estimate a constant natural mortality (M), catchability (q) and proportions selected by the gear at age between 0 and 6 years old
+
+- Model 1 estimates 8 parameters (M, q and [6 selectivities for age-groups 0--1 to 5--6 years old](Script/Results/Models/Mod1-GearSelectivity.csv) to have remained constant throughout the entire time series. 
+- Model 2 estimated M, q and 2 parameters for a logistic gear selectivity (refer to article cited in the introduction for details). Estimates of selectivity at age are provided [here](Script/Results/Models/Mod2-GearSelectivity.csv).
 - Model 3 estimates selectivity in 1 block like model 1 and has natural mortality fixed at 0.7 per year according to estimates found in the scientific literature.
+
+<!--
 
 ## Results
 
