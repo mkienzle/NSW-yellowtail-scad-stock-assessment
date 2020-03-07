@@ -1,6 +1,6 @@
 
 # CREATED   3 March 2017
-# MODIFIED  4 March 2020
+# MODIFIED  7 March 2020
 
 # PURPOSE characterise the profile likelihood of a mortality model for yellowtail scad
 
@@ -75,7 +75,7 @@ counter <- 1
 
 csf <- 1e-7 # catchability scaling factor
 
-for(s3 in seq(0, 0.4, length = 1e3)){
+for(s3 in seq(0.05, 0.4, length = 1e3)){
 print(paste("Counter=", counter))
 
 result1 <- optim(par = c("q" = 5, "M" = 0.2, "s1" = 0, "s2" = 0.05, "s4" = 0.4, "s5" = 0.7, "s6" = 0.9), fn = local.ll.model1, catch = nb.at.age.wgt, effort = effort.mat, catchability.scaling.factor = csf, fixeds3 = s3, method = c("L-BFGS-B"),

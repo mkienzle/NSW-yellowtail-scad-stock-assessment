@@ -48,13 +48,14 @@ abline(h = max.boundary, lty = 3)
 
 ### Selectivity of first age group (s3)
 print("s3")
-prof.s3 <- read.csv("Results/Data/ProfileLikelihoodOfS3-Apr102017-05-12-38.csv")
-prof.s3 <- read.csv("Results/Data/ProfileLikelihoodOfS3-Mar032020-07-44-52.csv")
+#prof.s3 <- read.csv("Results/Data/ProfileLikelihoodOfS3-Apr102017-05-12-38.csv")
+#prof.s3 <- read.csv("Results/Data/ProfileLikelihoodOfS3-Mar032020-07-44-52.csv")
+prof.s3 <- read.csv("Results/Data/ProfileLikelihoodOfS3-Mar072020-11-24-36.csv")
 tmp <- with(subset(prof.s3, log.lik <= max.boundary), range(s3))
 print(tmp)
 
 # plot
-with(prof.s3, plot(s3, log.lik, type = "l", xlab = "Selectivity of age-group 3", ylab = "Negative log-likelihood"))
+with(prof.s3, plot(s3, log.lik, type = "l", xlab = "Selectivity of age-group 3", ylab = "Negative log-likelihood", xlim = c(0.1, 0.4), ylim = c(6380, 6410)))
 
 abline(h = max.boundary, lty = 3)
 
