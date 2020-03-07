@@ -32,7 +32,13 @@ So far, three mortality models have been estimated from the data. All models est
 
 ## Results
 
-Model 1 is most supported by the data according to [AIC](Script/Results/Data/ModelComparisonTable.csv). [This diagnostic plot](Script/Results/Graphics/NbAtAgeOverlayedWithModel.png) shows discrepancies between model 2 and age data. [Profiles](Script/Results/Graphics/Model2-ProfileLikelihood.png) of its negative log-likelihood function are smooth around the minimum for each parameter and allow to visualise parameter estimates uncertainties. The sections below describe the dynamics of this fishery based on this model 2 parameter estimates.
+Model 1 is most supported by the data according to [AIC](Script/Results/Data/ModelComparisonTable.csv). [This diagnostic plot](Script/Results/Graphics/NbAtAgeOverlayedWithModel.png) shows discrepancies between model 1 and age data: this model does not provide a great fit to the data. There is more variability in the observation of number at age than the model can account for. [Profiles](Script/Results/Graphics/Model1-ProfileLikelihood.png) of its negative log-likelihood function are smooth around the minimum for each parameter and allow to visualise parameter estimates uncertainties. 
+
+## Conclusions
+
+Results of applying hazard functions to yellowtail scad data to estimate mortality rates affecting this stock are not as satisfying as in the case of [sea garfish](https://github.com/mkienzle/NSW-sea-garfish-stock-assessment). One of the problem with the results presented here is that catchability is estimated to be extremely low, with great uncertainties. It is not clear whether this results from a problem with this analysis, from the data, the method or both. Or if it is really the case that fishing mortality on this stock is extremely low. An alternative analysis using catch curves suggests also that fishing mortality is very low [REF?].\\
+
+The model best supported by the data suggests that fishing mortality is very low, well below estimates of natural mortality. Given those estimates, one would conclude that current level of exploitation are not unsustainable.
 
 <!--
 
